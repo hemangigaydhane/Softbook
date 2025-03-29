@@ -1,6 +1,7 @@
 # Softbook
 SoftBook is a dynamic social networking platform designed to bring people together in a meaningful way. Whether you're looking to connect with friends, share your thoughts, or explore new communities, SoftBook provides a seamless and engaging experience.
 
+
 ## Features
 Personalized Profiles –
 -  Customize your profile with photos, bios, and interests.
@@ -19,4 +20,20 @@ Secure & Private –
 
 ## Tech Stack
 
+- Node.js
+- Express.js
+- dotenv
+- mongoose
+- nodemon
+
 ## API EndPoints
+
+Users
+- /api/vi/user/create
+- /api/v1/user/getall
+- /api/v1/user/get/:id
+- /api/v1/user/delete/:id
+- /api/v1/user/update/:id
+
+## Security Consideration
+
