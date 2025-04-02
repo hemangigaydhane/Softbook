@@ -44,6 +44,17 @@ POST
 - /api/v1/post/getall
 - /api/v1/post/get/:id 
 
+ -/api/v1/post/:postId/like
+ -/api/v1/post/:postId/unlike
+
+ -/api/v1/post/:postId/comment/:commentId/like
+ -/api/v1/post/:postId/comment/:commentId/unlike
+
+ -/api/v1/post/:postId/comment(same for create and delete)
+ -/api/v1/post/:postId/comment/:commentId/comment (same for create and delete)
+
+
+
 Message 
 - /api/v1/message/send
 - /api/v1/message/unsend:/id
@@ -51,6 +62,8 @@ Message
 - /api/v1/message/getall
 - /api/v1/message/read:/id
 - /api/v1/message/delete:/id
+
+
 
 
 ## Security Consideration
