@@ -9,12 +9,11 @@ const userSchema = new mongoose.Schema({
 
     email:{
         type: String, ///data type of the vcalue 
-        required:true, //value is compulsory requirefd
-        unique:true,  // value sholud be uniqye
+        required:true, //value is compulsory /requirefd
+        unique:true,  // value sholud be uniqe /no two user can have the same email
         trim: true   
     },
-
-    pwd:{
+    passward:{
         type:String,
         required:true,
         minlength:8
@@ -26,9 +25,8 @@ const userSchema = new mongoose.Schema({
    },
 
     mobile:{
-        type: String,
+        type: Number ,
         required :true,
-        unique: true,
         length:10
 
     },
@@ -45,10 +43,10 @@ const userSchema = new mongoose.Schema({
         trim: true
     },
     avatar:String,
-
-    DOB:'date'
+    DOB: Date,
+    hashedpwd:String
 
 })
 
- const user = mongoose.model('User',userSchema) //user is the name of the collecctuon 
+ const User = mongoose.model('User',userSchema) //user is the name of the collecctuon 
  export default User

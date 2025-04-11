@@ -16,3 +16,4 @@ comment:{
 })
 
 const like = model('Like',likeSchema)
+export default like
